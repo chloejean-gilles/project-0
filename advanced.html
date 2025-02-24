@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            div {
+                position: absolute;
+                top:0;
+                right:0;
+                padding: 15px;
+                <!--ock;-->
+                float: right;
+            }
+            #adButton {
+                background-color: blue;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <button onclick="window.location.href='index.html'">Google Search</button>
+    </div>
+    <section>
+        <form action="https://www.google.com/search">
+            <h3>Advanced Search</h5>
+            <label for="all-words">Find pages with all these words</label>
+            <input type="text" name="as_q" id="all-words">
+            <p></p>
+            <label for="exact-words">Find pages with this exact word or phrase</label>
+            <input type="text" name="as_epq" id="exact-word">
+            <p></p>
+            <label for="any-words">Find pages with any of these words</label>
+            <input type="text" name="as_oq" id="any-words">
+            <p></p>
+            <label for="none-words">Find pages with none of these words</label>
+            <input type="text" name="as_eq" id="none-words">
+            <p></p>
+            <input id="adButton" type="submit" value="Advanced Search">
+        </form>
+    </section>
+    </body>
+</html>
